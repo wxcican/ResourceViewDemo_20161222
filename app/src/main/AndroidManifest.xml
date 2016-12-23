@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".demoa.DemoAActivity" />
         <activity android:name=".demob.DemoBActivity" />
-        <activity android:name=".democ.DemoCActivity"></activity>
+        <activity android:name=".democ.DemoCActivity" />
+        <activity android:name=".demod.DemoDActivity"></activity>
     </application>
 
 </manifest>
