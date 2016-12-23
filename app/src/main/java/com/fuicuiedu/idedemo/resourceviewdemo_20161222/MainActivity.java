@@ -3,6 +3,7 @@ package com.fuicuiedu.idedemo.resourceviewdemo_20161222;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.fuicuiedu.idedemo.resourceviewdemo_20161222.demoa.DemoAActivity;
+import com.fuicuiedu.idedemo.resourceviewdemo_20161222.demob.DemoBActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             //"下拉刷新"
             case 1:
-                Toast.makeText(this, "下拉刷新", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, DemoBActivity.class);
+                startActivity(intent);
                 break;
             //"上拉加载"
             case 2:
