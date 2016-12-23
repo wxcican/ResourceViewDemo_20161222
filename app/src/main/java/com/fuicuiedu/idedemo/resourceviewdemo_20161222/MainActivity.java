@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.fuicuiedu.idedemo.resourceviewdemo_20161222.demoa.DemoAActivity;
 import com.fuicuiedu.idedemo.resourceviewdemo_20161222.demob.DemoBActivity;
+import com.fuicuiedu.idedemo.resourceviewdemo_20161222.democ.DemoCActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             //"上拉加载"
             case 2:
-                Toast.makeText(this, "上拉加载", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, DemoCActivity.class);
+                startActivity(intent);
                 break;
             //"视图封装"
             case 3:
