@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.fuicuiedu.idedemo.resourceviewdemo_20161222.R;
@@ -69,7 +70,7 @@ public abstract class BaseResourceView<Model,ItemView extends BaseItemView<Model
     }
 
     //请求数据
-    protected abstract 数据 queryData(int limit,int skip);
+//    protected abstract 数据 queryData(int limit,int skip);
     //单次请求多少条数据
     protected abstract int getLimit();
 
@@ -79,20 +80,20 @@ public abstract class BaseResourceView<Model,ItemView extends BaseItemView<Model
 
     @Override
     public void onRefresh() {
-        数据 = queryData(getLimit(),0);
-        if (数据请求成功){
-            skip = 数据.size();
-        }
+//        数据 = queryData(getLimit(),0);
+//        if (数据请求成功){
+//            skip = 数据.size();
+//        }
     }
 
     //------------------------mugen 监听 start ----------------------
 
     @Override
     public void onLoadMore() {
-        数据 = queryData(getLimit(),skip);
-        if (数据加载成功){
-            skip = skip + 数据.size;
-        }
+//        数据 = queryData(getLimit(),skip);
+//        if (数据加载成功){
+//            skip = skip + 数据.size;
+//        }
     }
 
     @Override
